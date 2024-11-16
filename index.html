@@ -108,10 +108,7 @@
         id="login_form"
       >
         <h3>
-          <strong
-            >¡Estás a solo unos pasos de formar parte de nuestra
-            comunidad!</strong
-          >
+          Accede y gestiona tu cuenta
         </h3>
         <fieldset>
           <legend>Inicio de sesión</legend>
@@ -132,6 +129,32 @@
           <input type="submit" value="Listo" />
         </fieldset>
       </form>
+      <form
+        action="/"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        target="_self"
+        name="login"
+        accept-charset="UTF-8"
+        autocomplete="on"
+        id="register_form"
+      >
+      <strong>¿No tienes cuenta? ¡Crear una!</strong>
+    </h3>
+        <fieldset>
+            <legend>Registro de nuevo usuario
+            </legend>
+            <label for="user_name">Nombre</label>
+            <input type="text" placeholder="Tu Nombre" required name="user_name" id="user_name">
+            <label for="user_mail">Correo electrónico</label>
+            <input type="email" placeholder="tu.email@mail.com" required name="user_mail" id="user_mail">
+            <label for="user_password">Contraseña</label>
+            <input type="password" required name="user_password" id="user_password">
+            <label for="email_content">Quiero recibir correos electrónicos</label>
+            <input type="checkbox" value="email_content" id="email_content">
+            <input type="submit" value="Registrarme" />
+        </fieldset>
+    </form>
     </main>
   </body>
 </html>
