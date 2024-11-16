@@ -86,12 +86,52 @@
         </section>
       </article>
       <aside>
-        <a href="/">
+        <a href="#login_form">
           <h2>¿Te gustaría recibir nuestras novedades?</h2>
-          <img src="/assets/foto_cessna_172_volando.jpg" alt="Foto de avión Cessna 172 volando" title="Avión Cessna 172 volando" width="300px">
+          <img
+            src="/assets/foto_cessna_172_volando.jpg"
+            alt="Foto de avión Cessna 172 volando"
+            title="Avión Cessna 172 volando"
+            width="300px"
+          />
           <p><strong>¡Pulsa aquí para registrarte!</strong></p>
         </a>
       </aside>
+      <form
+        action="/"
+        method="get"
+        enctype="application/x-www-form-urlencoded"
+        target="_self"
+        name="login"
+        accept-charset="UTF-8"
+        autocomplete="on"
+        id="login_form"
+      >
+        <h3>
+          <strong
+            >¡Estás a solo unos pasos de formar parte de nuestra
+            comunidad!</strong
+          >
+        </h3>
+        <fieldset>
+          <legend>Inicio de sesión</legend>
+          <label for="user_login_email">Dirección de correo electrónico</label>
+          <input
+            type="email"
+            placeholder="tu.email@mail.com"
+            required
+            id="user_login_email"
+          />
+          <label for="user_login_password">Contraseña</label>
+          <input
+            type="password"
+            placeholder="tucontraseña"
+            required
+            id="user_login_password"
+          />
+          <input type="submit" value="Listo" />
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>
